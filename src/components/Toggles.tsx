@@ -37,6 +37,7 @@ export const Toggles = withSharedState(
               onChange={(checked: boolean) => {
                 setData({ lastOn: checked ? i : i - 1 });
               }}
+              onColor="#0078d4"
             />
           </div>
         ))}
