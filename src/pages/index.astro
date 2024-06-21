@@ -1,0 +1,17 @@
+---
+import { TogglesWrapper } from "../components/Toggles.tsx";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Toggles">
+  <main>
+    <TogglesWrapper client:only="react" />
+  </main>
+</Layout>
+
+<style>
+  main {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+</style>
