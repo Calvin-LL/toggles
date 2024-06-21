@@ -5,13 +5,32 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Toggles">
   <main>
+    <div class="description">
+      <h1>Toggles</h1>
+      <div>
+        <p>
+          This game is collaborative. Your changes will be visible to everyone.
+          There are 100 toggles.
+        </p>
+        <p>Switching off a toggle will switch off all subsequent toggles.</p>
+        <p>You can only switch on a toggle if the previous one is on.</p>
+      </div>
+    </div>
     <TogglesWrapper client:only="react" />
   </main>
 </Layout>
 
 <style>
   main {
+    text-align: center;
+
     padding-top: 1rem;
     padding-bottom: 1rem;
+
+    .description {
+      margin-bottom: 2rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
   }
 </style>
